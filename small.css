@@ -1,0 +1,89 @@
+body{
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+  header {
+      background-color: #a31010;
+      padding: 8px;
+      border-radius: 8px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+  }
+  
+  h1 {
+      font-size: 1.5em;
+      text-align: center;
+      color: #ffffff;
+  }
+  
+  .lessons {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 50px 60px 300px;
+  }
+  
+  h2 {
+      font-size: 30px;
+      text-align: left;
+      border-bottom: 5px double;
+      margin-top:  100px;
+      padding: 0;
+      height: 50px;
+  }
+  
+  ul {
+      text-align: left;
+      color: #000000;
+      grid-row: 3/4;
+      grid-column: 1/2;
+      align-self: center;
+  }
+  
+  footer {
+      background-color: #000000;
+      position: fixed;
+      bottom: 0;
+      text-align: center;
+      left: 0;
+      width: 100%;
+      color: #ffffff;
+      padding: 8px;
+  }
+  
+  .footerInfo {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+  }
+  
+  img {
+      grid-row: 2/4;
+      grid-column: 3/4;
+      z-index: 1;
+      width: 150px;
+      float: right;
+      box-shadow: 10px 10px 20px #140f0f;
+  }
+  
+  #byuLink {
+      align-self: center;
+      color: white;
+      padding-left: 4px;
+  }
+  
+  #year {
+      color: white;
+      padding-left: 5px;
+      padding-right: 5px;
+  }
+  
+  .lastModified {
+      color: rgb(205, 50, 58);
+      justify-content: center;
+      font-size: 11px;
+      display: flex;
+  
+  }
+  © 2021 GitHub, Inc.
