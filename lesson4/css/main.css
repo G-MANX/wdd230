@@ -112,7 +112,7 @@ h2#h2Banner:before{
     margin:1%;
     background-color: #8a8a8a;
     border: 2px dotted   #585858;
-    color:  white;
+    color: #000000;
     margin-bottom:10px;
 }
 footer{
