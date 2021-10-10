@@ -1,0 +1,33 @@
+@media only screen and (min-width: 32.5em){
+    .navBar li:first-child {
+        display: none;
+    }
+    header{
+        grid-template-columns: 24% 1fr;
+        height:150px;
+    }
+    #logo{
+        width:80%;
+    }
+    #motto{
+        font-size:180%;
+    }
+    h1{
+        font-size: 300%;
+    }
+    .navBar li{
+        display:block;
+    }
+    
+    ul{
+        display:flex; 
+        align-items: center;
+    }
+    li{
+        text-align:center;   
+    }
+    footer{
+        width: 80%;
+        margin: 1em 10%;
+    }
+    }
