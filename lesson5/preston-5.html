@@ -1,46 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
     <title>Preston Idaho</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/lesson5/images/favicon.ico">
     <meta name="description" content="Preston Idaho weather report">
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Vollkorn+SC:wght@900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="/lesson5/css/normalize.css">
+    <link rel="stylesheet" href="/lesson5/css/main.css">
+    <link rel="stylesheet" href="/lesson5/css/medium.css">
+    <link rel="stylesheet" href="/lesson5/css/large.css">
     
     </head>
     <body>
+        <div id="toggle2"> 
+        </div>
+        <aside id="alertContainer" style="display: none;">
+            <p id="alert">Saturday = Preston Park Pizza!<br>
+                 1:00 p.m. Saturday at the city park.</p>
+        </aside>
         <header>
-            <a href="#"><img src="images/logo.png" alt="logo" id="logo"></a>
-          <h1>Weather Atlas</h1>
-          <div id="motto"><em>"Believe In Nature"</em></div>
+          <a href="#"><img src="/lesson5/images/logo.png" alt="logo" class="logo"></a>
+          <h1>weather-atlas</h1>
+          <div id="motto"><em>"Belive In Nature"</em></div>
+       
+        <div id="banner">Sat = </div>
         </header>
         <nav>
             <ul class="navBar">
                 <li><a class="menu" href="#"><div class="linkName">&#9776; Menu</div></a></li>
-                <li><a href="../index.html" target="_blank"><div class="linkName">Home</div></a></li>
-                <li><a href="#"><div class="linkName">Preston</div></a></li>
-                <li><a href="#"><div class="linkName">Soda Springs</div></a></li>
-                <li><a href="#"><div class="linkName">Fish Haven</div></a></li>
-                <li><a href="#"><div class="linkName">Storm Center</div></a></li>
-                <li><a href="#"><div class="linkName">Gallery</div></a></li>
+                <li><a href="#" id="home"><div class="linkName">Home</div></a></li>
+                <li><a href="#" id="preston"><div class="linkName" class="active-page">Preston</div></a></li>
+                <li><a href="#" id="sodasprings"><div class="linkName">Soda Springs</div></a></li>
+                <li><a href="#" id="fishhaven"><div class="linkName">Fish Haven</div></a></li>
+                <li><a href="#" id="stormcenter"><div class="linkName">Storm Center</div></a></li>
+                <li><a href="#" id="gallery"><div class="linkName">Gallery</div></a></li>
             </ul>
         </nav>
         <main>
           <h2 id="h2Banner">Preston Idaho</h2>
-          <div class="placeholder">Hero w/ weather summary</div>
-          <div class="placeholder">5 day forecast</div>
-          <div class="placeholder">Article</div>
-          <div class="placeholder">Contact information</div>
+          <div class="myDiv">
+            <img id="myImg" src="/lesson5/images/weather.jpg" alt="mountainview">
+            <section class="mycast">
+              <h4 id="weatherSum">Weather Summary</h4>
+              <div id="sumContent">
+                  <p id="currently" class="leftSum">Currently:</p>
+                  <p id="currently2" class="rightSum">Sunny</p>
+
+                  <p id="high" class="leftSum">High:</p>
+                  <p id="high2" class="rightSum">76&#176;F</p>
+
+                  <p id="windChill" class="leftSum">Wind Chill:</p>
+                  <p id="windChill2" class="rightSum">&#176;F</p>
+
+                  <p id="humidity" class="leftSum">Humidity:</p>
+                  <p id="humidity2" class="rightSum">69%</p>
+
+                  <p id="windSpeed" class="leftSum">Wind Speed:</p>
+                  <p id="windSpeed2" class="rightSum">5 mph</p>
+              </div>
+            </section>
+          </div>
+          <div class="forecast">
+              <h3 id="forecastheader">5 Day Forecast</h3>
+              <table>
+                <tr>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                </tr>
+                <tr>
+                    <td><img class="forecastImg" src="/lesson5/images/Cloud Icon.png" alt="sunny">89&#176;F</td>
+                    <td><img class="forecastImg" src="/lesson5/images/Cloud Icon.png" alt="sunny">87&#176;F</td>
+                    <td><img class="forecastImg" src="/lesson5/images/Cloud Icon.png" alt="sunny">78&#176;F</td>
+                    <td><img class="forecastImg" src="/lesson5/images/Cloud Icon.png" alt="sunny">75&#176;F</td>
+                    <td><img class="forecastImg" src="/lesson5/images/Cloud Icon.png" alt="sunny">72&#176;F</td>
+                </tr>
+              </table>
+          </div>
+          <div class="article">
+              <img id="articleImg" src="/lesson5/images/shutterstock_.jpg" alt="WINTER 2020–2021 FORECAST">
+              <h3>LOOKING BACK ON OUR WINTER 2020–2021 FORECAST</h3>
+              <h4 id="author">by Jude Hale</h4>
+              <p id="articleContent">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
+                aute irure dolor in reprehenderit in voluptate velit esse 
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                occaecat cupidatat non proident, sunt in culpa qui officia 
+                deserunt mollit anim id est laborum. 
+              </p>
+          </div>
+          <hr>
+          <div class="map">
+              <img id="mapImg" src="images/map.jpg" alt="mapofcities">
+              <section id="mapInfo">
+                  <p class="addressInfo">weather atlas <br>
+                  <img src="images/locationsmall.png" id="locationImg" alt="locationpin"> 30 N 1st E<br>
+                  Preston, ID 83263</p>
+                  <p id="phone">888-7777-6666</p>
+                  <p id="email">notreal@weather-atlas.com</p>
+                  <div class="icons">
+                    <a href="https://www.facebook.com" class="medialinks"><img id="fbook" class="mediaIcons" src="/lesson5/images/fbooksmall.png" alt="facebook"></a> 
+                    <a href="https://www.twitter.com" class="medialinks"><img id="twitter" class="mediaIcons" src="/lesson5/images/twittersmall.png" alt="twitter"></a>
+                    <a href="https://www.whatsapp.com/" class="medialinks"><img id="whatsapp" class="mediaIcons" src="/lesson5/images/whatssmall.png" alt="whatsapp"></a>
+                 </div>
+              </section>
+          </div>
         </main>
         <footer>
             <div class=footerInfo>
-                &#169;Weather-Atlas  |  Attributions  |  Nelson Azumah
+                &#169;Weather Atlas  |  Attributions  |  Nelson Azumah
             </div>
             <span id="date"></span>
         </footer>
-        <script src="js/w4.js"></script>
+        <script src="/lesson5/js/w5.js"></script>
+        <script src="/lesson5/js/pancakes.js"></script>
+        <script src="js/banner.js"></script>
+
     </body>
+</html>

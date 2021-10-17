@@ -1,0 +1,27 @@
+@media only screen and (min-width: 48em){
+    header{
+        grid-template-columns: 13% 1fr;
+        grid-template-rows: 150px;
+    }
+    h1{
+        font-size: 400%;
+    }
+    nav{
+        height: 35px;    
+    }
+    #motto{
+        font-size:180%;
+    }
+    #logo{
+        position: relative;
+    }
+    #mapImg{
+        max-width:25%;
+    }
+    
+    .articleImg {
+        width: 200px;
+        height: 100px;
+        float: right;
+    }
+    }
