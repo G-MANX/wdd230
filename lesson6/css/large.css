@@ -1,0 +1,51 @@
+@media only screen and (min-width: 1130px){
+    header{
+        grid-template-columns: 13% 1fr;
+        grid-template-rows: 150px;
+    }
+    h1{
+        font-size: 400%;
+    }
+    nav{
+        height: 35px;    
+    }
+    #motto{
+        font-size:180%;
+    }
+    #logo{
+        position: relative;
+    }
+    #mappic{
+        max-width:25%;
+    }
+    /* Gallery page */
+    #maincontainer{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap:1rem;
+    
+    }
+    #container1, #container4, #container7{
+        grid-column:1/2;
+    }
+    #container2, #container5, #container8{
+        grid-column:2/3;
+    }
+    #container3, #container6, #container9{
+        grid-column:3/4;
+    }
+    #container1, #container2, #container3{
+        grid-row:1/2;
+    }
+    #container4, #container5, #container6{
+        grid-row:2/3;
+    }
+    #container7, #container8, #container9{
+        grid-row:3/4;
+        margin-bottom: 1em;
+    }
+    .gallerycontent:hover{
+        box-shadow:5px 5px 8px #5c5c5c;
+    }
+    }

@@ -1,0 +1,106 @@
+@media only screen and (min-width: 730px){
+    .navBar li:first-child {
+        display: none;
+    }
+    header{
+        grid-template-columns: 24% 1fr;
+        height:150px;
+    }
+    #logo{
+        width:75%;
+    }
+    h1{
+        font-size: 300%;
+    }
+    .navBar li{
+        display:block;
+    }
+    .linkName{
+        margin-top:5px;
+    }
+    ul{
+        display:flex; 
+        align-items: center;
+    }
+    li{
+        text-align:center;   
+    }
+    .forecast{
+        margin: 5% auto;
+    }
+    #forecastheader{
+        text-align:center;
+        font-size:2em;
+    }
+    table{
+        margin: 1% auto;
+        width: 50%;
+        height: 150px;
+        border:2px solid #1e56a0;
+        border-collapse: collapse;
+    }
+    th{
+        border:2px solid #1e56a0;
+        background-color:#163172;
+        color:white;
+    }
+    td{
+        border:2px solid #1e56a0;
+    }
+    .forecastImg{
+        max-width:35px;
+        height:auto;
+    }
+    footer{
+        width: 80%;
+        margin: 1em 10%;
+    }
+    .herocast{
+        bottom: 20px;
+    }
+    .forecast, #mapImg{
+        display:block;
+    }
+    #mappic{
+        max-width:50%;
+        margin-right: 20px;
+    }
+    #mapImg{
+        max-width:100%;
+        margin-left:10px;
+    }
+    .map{
+        display:flex;
+        align-items:center;
+    }
+    /*css for gallery*/
+    #maincontainer{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        row-gap:1rem;
+    
+    }
+    #container1, #container3, #container5, #container7, #container9{
+        grid-column:1/2;
+    }
+    #container2, #container4, #container6, #container8{
+        grid-column:2/3;
+    }
+    #container1, #container2{
+        grid-row:1/2;
+    }
+    #container3, #container4{
+        grid-row:2/3;
+    }
+    #container5, #container6{
+        grid-row:3/4;
+    }
+    #container7, #container8{
+        grid-row:4/5;
+    }
+    #container9{
+        grid-row:5/6;
+        margin-bottom: 1em;
+    }
+    }
