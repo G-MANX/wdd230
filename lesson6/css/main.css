@@ -4,6 +4,18 @@ body{
     font-family: "Times New Roman", Times, serif;
     
 }
+.imgsize::before{
+    content: "Small";
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background: radial-gradient(#4567aa, #565456);
+    padding: 1.5rem;
+    opacity: 0.45;
+  }
+
 main{
     width: 80%;
     padding: 0 0;
@@ -262,15 +274,3 @@ h3{
     color:#163172;
     font-style:italic;
 }
-/*gallery css*/
-.gallerycontent{
-    box-shadow: 2px 2px 4px #888888;
-    width:300px;
-    margin:0 auto;
-}
-.gallerycontent p{
-    font-size: 18px;
-    margin-top:2px;
-    margin-left:2px;
-    font-style:italic;
-};
