@@ -32,21 +32,23 @@
             <h2 id="h2Banner">Storm Center</h2>
             <div id="grid">
             <section id="maincontainer">
-              <form method="get" action="">
+              <form method="get" action="thanks.html">
                 <label for="name">Full Name:*
-                <input type="text" name="name" id="name" pattern="[A-Za-z]{5,}" placeholder="Your name here" required></label>
+                <input type="text" name="name" id="name" pattern="[A-Za-z]{5,30}" placeholder="Joe Name" required></label>
                 
 
                 <label for="email">Email:
-                <input type="text" name="email" id="email" placeholder="user@email.org"></label>
+                <input type="email" name="email" id="email" placeholder="user@email.org"></label>
                
 
                 <label for="phone">Phone Number:*
-                <input type="tel" name="phone" id="phone" placeholder="000-000-0000" required></label>
+                <input type="tel" name="phone" id="phone" pattern="[0-9 (.-)]{7,14}"  placeholder="000-000-0000" required></label>
+                
                 
 
                 <label for="zip">Zip Code:*
-                <input type="number" name="zip" id="zip" placeholder="00000" required></label>
+                <input type="text" name="zip" id="myText"pattern="(\d{5}([\-]\d{4})?)"placeholder="00000" required></label
+                >
                
 
                 <label for="stormdate">Storm Date:
