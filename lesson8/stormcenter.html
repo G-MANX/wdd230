@@ -34,28 +34,23 @@
             <section id="maincontainer">
               <form method="get" action="thanks.html">
                 <label for="name">Full Name:*
-                <input type="text" name="name" id="name" pattern="[A-Za-z]{5,30}" placeholder="Joe Name" required></label>
+                  <input type="text" name="name" id="name" pattern="[A-Za-z]{5,}" placeholder="John Doe" required></label>
                 
-
                 <label for="email">Email:
-                <input type="email" name="email" id="email" placeholder="user@email.org"></label>
+                <input type="text" name="email" id="email" placeholder="user@email.org"></label>
                
 
                 <label for="phone">Phone Number:*
-                <input type="text" name="email" id="email" placeholder="user@email.org"></label>
-               
-                
+                <input type="tel" name="phone" id="phone" placeholder="000-000-0000" required></label>
                 
 
                 <label for="zip">Zip Code:*
-   l            <input type="number" name="zip" id="zip" placeholder="00000" required></label>
-                
+                <input type="number" name="zip" id="zip" placeholder="00000" required></label>
                
 
                 <label for="stormdate">Storm Date:
                 <input type="date" name="date" id="stormdate"></label>
-                
-
+              
                 <label for="type">Storm Type:
                 <input type="text" name="type" id="type" list="stormtypes"></label>
                 <datalist id="stormtypes">
