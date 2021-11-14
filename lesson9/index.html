@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+    <title>Weather-Atlas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Weather-Atlas">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/hmedium.css">
+    <link rel="stylesheet" href="css/hlarge.css">
+    
+    </head>
+    <body>
+        <header>
+            <a href="#"><img src="images/logo.png" alt="logo" id="logo"></a>
+            <h1>Weather-Atlas</h1>
+            <div id="motto"><em>"Believe In Nature"</em></div>
+            
+          </header>
+          <nav>
+              <ul class="navBar">
+                  <li><a class="menu" href="#"><div class="linkName">&#9776; Menu</div></a></li>
+                  <li><a href="#" id="home"><div class="linkName">Home</div></a></li>
+                  <li><a href="#" id="preston"><div class="linkName" class="active-page">Preston</div></a></li>
+                  <li><a href="#" id="sodasprings"><div class="linkName">Soda Springs</div></a></li>
+                  <li><a href="#" id="fishhaven"><div class="linkName">Fish Haven</div></a></li>
+                  <li><a href="#" id="stormcenter"><div class="linkName">Storm Center</div></a></li>
+                  <li><a href="#" id="gallery"><div class="linkName">Gallery</div></a></li>
+              </ul>
+          </nav>
+          <main>
+            <h2 id="h2Banner">Home Page</h2>
+            <section id="maincontainer">
+                <div class="heroDiv">
+                    <picture>
+                      <source srcset="images/weathermed.jpg" media="(min-width:32.5em) and (max-width:45em )">
+                      <source srcset="images/weatherlarge.jpg" media="(min-width:45em)">
+                      <img id="heroImg" src="images/weathersmall.jpg" alt="climate earth hero image">
+                    </picture>
+                </div>
+            </section>
+            <section class="towns">
+            </section>
+            <article id="article">
+                <picture class="articleImg">
+                  <source srcset="images/articlemed.jpg" media="(min-width:32.5em) and (max-width:45em )">
+                    <source srcset="images/articlelarge.jpg" media="(min-width:45em)">
+                    <img id="articleImg" src="images/articlesmall.jpg" alt="weather news">
+                </picture>
+                <div class="articleContent">
+                  <h3 id="articleheader">The 2020–2021 Weather Forecast!</h3>
+                  <h4 id="author">by: by Jude Hale</h4>
+                  <p id="articlePara">
+                    “This coming winter could well be one of the longest and coldest that we’ve seen in years,” says Janice Stillman, editor of The Old Farmer’s Almanac. 
+                    For 230 years, the Almanac has been helping readers to prepare for winter’s worst with its 80 percent–accurate weather forecasts.
+                  </p>
+                  <ul id="articleUl">
+                    <li class="articleLi">Verify operation of furnace.</li>
+                    <li class="articleLi">Prepare a safe secondary method for heat.</li>
+                    <li class="articleLi">Replace batteries on smoke and carbon monoxide detectors.</li>
+                    <li class="articleLi">Inspect your chimney or flue.</li>
+                    <li class="articleLi">Create an emergency car kit.</li>
+                    <li class="articleLi">Check Weather-Atlas forecast often to be up-to-date!</li>
+                  </ul>
+                </div> 
+            </article>
+            <div class="map">
+                <picture id="mappic">
+                  <source srcset="images/maplarge.jpg" media="(min-width:40em)">
+                  <img id="mapImg" src="images/mapmedium.jpg" alt="mapofcities">
+                </picture>
+                <section id="mapInfo">
+                    <p class="addressInfo">Weather-Atlas <br>
+                    <img src="images/locationsmall.png" id="locationImg" alt="locationpin"> 30 N 1st E<br>
+                    Preston, ID 83263</p>
+                    <p id="phone">888-666-7777</p>
+                    <p id="email">notreal@Weather-Atlas.com</p>
+                    <div class="icons">
+                       <a href="https://www.facebook.com" class="medialinks"><img id="fbook" class="mediaIcons" src="images/fbooksmall.png" alt="facebook"></a> 
+                       <a href="https://www.whatsapp.com/" class="medialinks"><img id="whatsapp" class="mediaIcons" src="images/whatssmall.png" alt="whatsapp"></a>
+                       <a href="https://www.twitter.com" class="medialinks"><img id="twitter" class="mediaIcons" src="images/twittersmall.png" alt="twitter"></a>
+                    </div>
+                </section>
+            </div>
+            <div id="wireframe"><a href="home-wireframes.html" id="wireframelink">Wireframe Link</a></a></div>
+          </main>
+
+          <footer>
+            <div class=footerInfo>
+                &#169;Weather-Atlas  |  Attributions  |  Nelson Azumah
+            </div>
+            <span id="date"></span>
+        </footer>
+        
+        <script  src="js/home.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({
+            google: {
+            families: ['Vollkorn SC', 'Lora']
+          }
+        });
+          </script>
+    </body>
+</html>
