@@ -1,0 +1,85 @@
+@media only screen and (min-width: 32.5em){
+    .navBar li:first-child {
+        display: none;
+    }
+    header{
+        grid-template-columns: 24% 1fr;
+        height:150px;
+    }
+    #logo{
+        width:75%;
+    }
+    h1{
+        font-size: 300%;
+    }
+    .navBar li{
+        display:block;
+    }
+    .linkName{
+        margin-top:5px;
+    }
+    ul{
+        display:flex; 
+        align-items: center;
+    }
+    li{
+        text-align:center;   
+    }
+    .forecast{
+        margin: 5% auto;
+    }
+    #forecastheader{
+        text-align:center;
+        font-size:2em;
+    }
+    table{
+        margin: 1% auto;
+        width: 50%;
+        height: 150px;
+        border:2px solid #1e56a0;
+        border-collapse: collapse;
+    }
+    th{
+        border:2px solid grey;
+        background-color:#163172;
+        color:white;
+    }
+    td{
+        border:2px solid grey;
+    }
+    .forecastImg{
+        max-width:35px;
+        height:auto;
+    }
+    footer{
+        width: 80%;
+        margin: 1em 10%;
+    }
+    .herocast{
+        bottom: 20px;
+    }
+    .forecast, #mapImg{
+        display:block;
+    }
+    #mappic{
+        max-width:50%;
+        margin-right: 20px;
+    }
+    #mapImg{
+        max-width:100%;
+        margin-left:10px;
+    }
+    .map{
+        display:flex;
+        align-items:center;
+    }
+    #sumContent{
+        grid-template-rows: 30px 30px 30px 30px 30px;
+    }
+    .rightSum, .leftSum{
+        font-size:1.4em;
+    }
+    #weatherSum{
+        font-size: 1.6em;
+    }
+    }
