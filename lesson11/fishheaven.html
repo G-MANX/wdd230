@@ -1,0 +1,138 @@
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+    <title>Fish Heaven</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Fish Heaven weather report">
+    <link rel="stylesheet" href="cs/main.css">
+    <link rel="stylesheet" href="cs/medium.css">
+    <link rel="stylesheet" href="cs/large.css">
+    
+    </head>
+    <body>
+        <aside id="alertContainer" style="display: none;">
+            <p id="alert">Saturday = Preston Park Pizza!<br>
+            1:00 p.m. Saturday at the city park.</p>
+        </aside>
+        <header>
+          <a href="#"><img src="images/logo.png" alt="logo" id="logo"></a>
+          <h1>Weather-Atlas</h1>
+          <div id="motto"><em>"Believe In Nature"</em></div>
+          
+        </header>
+        <nav>
+            <ul class="navBar">
+                <li><a class="menu" href="#"><div class="linkName">&#9776; Menu</div></a></li>
+                <li><a href="index.html" id="home"><div class="linkName">Home</div></a></li>
+                <li><a href="preston.html" id="preston"><div class="linkName" class="active-page">Preston</div></a></li>
+                <li><a href="sodasprings.html" id="current"><div class="linkName">Soda Springs</div></a></li>
+                <li><a href="fishheaven.html" id="fishheaven"><div class="linkName">Fish Heaven</div></a></li>
+                <li><a href="stormcenter.html" id="stormcenter"><div class="linkName">Storm Center</div></a></li>
+                <li><a href="gallery.html" id="gallery"><div class="linkName">Gallery</div></a></li>
+            </ul>
+        </nav>
+        <main>
+          <h2 id="h2Banner">Fish Heaven</h2>
+          <div class="heroDiv">
+              <picture>
+                <source srcset="images/fheromed.jpg" media="(min-width:32.5em) and (max-width:45em )">
+                <source srcset="images/fherolarge.jpg" media="(min-width:45em)">
+                <img id="heroImg" src="images/fherosmall.jpg" alt="frank image">
+              </picture>
+            <section class="herocast">
+              <h4 id="weatherSum">Weather Summary</h4>
+              <div id="sumContent">
+                  <p id="currently" class="leftSum">Currently:</p>
+                  <p id="currently2" class="rightSum"><span id="weat">Err</span></p>
+
+                  <p id="high" class="leftSum">High:</p>
+                  <p id="high2" class="rightSum"><span id="temp">Err</span>&#176;F</p>
+
+                  <p id="windChill" class="leftSum">Wind Chill:</p>
+                  <p id="windChill2" class="rightSum"><span id="chill"></span>&#176;F</p>
+
+                  <p id="humidity" class="leftSum">Humidity:</p>
+                  <p id="humidity2" class="rightSum"><span id="humid">Err</span>%</p>
+
+                  <p id="windSpeed" class="leftSum">Wind Speed:</p>
+                  <p id="windSpeed2" class="rightSum"><span id="speed">Err</span> mph</p>
+              </div>
+            </section>
+          </div>
+          <div class="forecast">
+              <h3 id="forecastheader">5 Day Forecast by <span id="openweather">OpenWeather</span><span id="copyr">&#169;</span></h3>
+              <table>
+                <tr>
+                    <th><span id="1day">Err</span></th>
+                    <th><span id="2day">Err</span></th>
+                    <th><span id="3day">Err</span></th>
+                    <th><span id="4day">Err</span></th>
+                    <th><span id="5day">Err</span></th>
+                </tr>
+                <tr>
+                    <td class="tabledata"><img class="forecastImg" id="0Img" src="images/CloudIcon.png" alt="weathericon"><span id="0Cast">Err</span>&#176;F</td>
+                    <td class="tabledata"><img class="forecastImg" id="1Img" src="images/CloudIcon.png" alt="weathericon"><span id="1Cast">Err</span>&#176;F</td>
+                    <td class="tabledata"><img class="forecastImg" id="2Img" src="images/CloudIcon.png" alt="weathericon"><span id="2Cast">Err</span>&#176;F</td>
+                    <td class="tabledata"><img class="forecastImg" id="3Img" src="images/CloudIcon.png" alt="weathericon"><span id="3Cast">Err</span>&#176;F</td>
+                    <td class="tabledata"><img class="forecastImg" id="4Img" src="images/CloudIcon.png" alt="weathericon"><span id="4Cast">Err</span>&#176;F</td>
+                </tr>
+              </table>
+          </div>
+          <div id="eventDiv">
+            <h2 id="eventHead">Events</h2>
+            <p id="events"></p>
+          </div>
+          <div class="article">
+            <picture>
+                <source srcset="images/articlemedium.jpg" media="(min-width:32.5em) and (max-width:40em )">
+                <source srcset="images/articlelarge.jpg" media="(min-width:40em)">
+                <img id="articleImg" src="images/articlesmall.jpg" alt="articles">
+              </picture>
+              
+              <h3>The 2020–2021 Weather Forecast</h3>
+              <h4 id="author">by Jude Hale</h4>
+              <p id="articleContent">
+                “This coming winter could well be one of the longest and coldest that we’ve seen in years,” says Janice Stillman, editor of The Old Farmer’s Almanac. 
+                For 230 years, the Almanac has been helping readers to prepare for winter’s worst with its 80 percent–accurate weather forecasts.
+              </p>
+          </div>
+          <hr>
+          <div class="map">
+              <picture id="mappic">
+                <source srcset="images/maplarge.jpg" media="(min-width:40em)">
+                <img id="mapImg" src="images/mapmedium.jpg" alt="mapofcities">
+              </picture>
+              <section id="mapInfo">
+                  <p class="addressInfo">Weather-Atlas <br>
+                  <img src="images/locationsmall.png" id="locationImg" alt="locationpin"> 30 N 1st E<br>
+                  Preston, ID 83263</p>
+                  <p id="phone">888-666-7777</p>
+                  <p id="email">notreal@Weather-Atlas.com</p>
+                  <div class="icons">
+                     <a href="https://www.facebook.com" class="medialinks"><img id="fbook" class="mediaIcons" src="images/fbooksmall.png" alt="facebook"></a> 
+                     <a href="https://www.twitter.com" class="medialinks"><img id="twitter" class="mediaIcons" src="images/twittersmall.png" alt="twitter"></a>
+                     <a href="https://www.whatsapp.com/" class="medialinks"><img id="whatsapp" class="mediaIcons" src="images/whatssmall.png" alt="whatsapp"></a>
+                  </div>
+              </section>
+          </div>
+        </main>
+        <footer>
+            <div class=footerInfo>
+                &#169;Weather-Atlas  |  Attributions  |  Nelson Azumah
+            </div>
+            <span id="date"></span>
+        </footer>
+        <script  src="js/main.js"></script>
+        <script  src="js/fforecast.js"></script>
+        <script  src="js/fwindchill.js"></script>
+        <script  src="js/fevents.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({
+            google: {
+            families: ['Vollkorn SC', 'Lora']
+          }
+        });
+          </script>
+    </body>
+</html>

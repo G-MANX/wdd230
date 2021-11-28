@@ -1,13 +1,12 @@
-<!doctype html>
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
-    <title>Preston Idaho</title>
+    <title>Soda Springs Idaho</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Preston Idaho Weather">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/large.css">
-    <link rel="stylesheet" href="css/medium.css">
+    <meta name="description" content="Soda Springs  weather report">
+    <link rel="stylesheet" href="cs/main.css">
+    <link rel="stylesheet" href="cs/medium.css">
+    <link rel="stylesheet" href="cs/large.css">
     
     </head>
     <body>
@@ -24,16 +23,16 @@
         <nav>
             <ul class="navBar">
                 <li><a class="menu" href="#"><div class="linkName">&#9776; Menu</div></a></li>
-                <li><a href="https://g-manx.github.io/wdd230/lesson9/index.html" id="home"><div class="linkName">Home</div></a></li>
-                <li><a href="https://g-manx.github.io/wdd230/lesson6/preston-6.htm" id="current"><div class="linkName" class="active-page">Preston</div></a></li>
-                <li><a href="#" id="sodasprings"><div class="linkName">Soda Springs</div></a></li>
-                <li><a href="#" id="fishhaven"><div class="linkName">Fish Haven</div></a></li>
-                <li><a href="https://g-manx.github.io/wdd230/lesson8/stormcenter.html" id="stormcenter"><div class="linkName">Storm Center</div></a></li>
-                <li><a href="https://g-manx.github.io/wdd230/lesson7/gallery-7.html" id="gallery"><div class="linkName">Gallery</div></a></li>
+                <li><a href="index.html" id="home"><div class="linkName">Home</div></a></li>
+                <li><a href="preston.html" id="preston"><div class="linkName" class="active-page">Preston</div></a></li>
+                <li><a href="sodasprings.html" id="current"><div class="linkName">Soda Springs</div></a></li>
+                <li><a href="fishheaven.html" id="fishhaven"><div class="linkName">Fish Haven</div></a></li>
+                <li><a href="stormcenter.html" id="stormcenter"><div class="linkName">Storm Center</div></a></li>
+                <li><a href="gallery.html" id="gallery"><div class="linkName">Gallery</div></a></li>
             </ul>
         </nav>
         <main>
-          <h2 id="h2Banner">Preston Idaho</h2>
+          <h2 id="h2Banner">Soda Springs Idaho</h2>
           <div class="heroDiv">
               <picture>
                 <source srcset="images/heromed.jpg" media="(min-width:32.5em) and (max-width:45em )">
@@ -79,16 +78,19 @@
                 </tr>
               </table>
           </div>
-          
+          <div id="eventDiv">
+            <h2 id="eventHead">Events</h2>
+            <p id="events"></p>
+          </div>
           <div class="article">
             <picture>
                 <source srcset="images/articlemedium.jpg" media="(min-width:32.5em) and (max-width:40em )">
                 <source srcset="images/articlelarge.jpg" media="(min-width:40em)">
-                <img id="articleImg" src="images/articlesmall.jpg" alt="weatherNews">
+                <img id="articleImg" src="images/articlesmall.jpg" alt="articles">
               </picture>
               
-              <h3>The 2020–2021 Weather Forecast!</h3>
-              <h4 id="author">by Jude Hale </h4>
+              <h3>The 2020–2021 Weather Forecast</h3>
+              <h4 id="author">by Jude Hale</h4>
               <p id="articleContent">
                 “This coming winter could well be one of the longest and coldest that we’ve seen in years,” says Janice Stillman, editor of The Old Farmer’s Almanac. 
                 For 230 years, the Almanac has been helping readers to prepare for winter’s worst with its 80 percent–accurate weather forecasts.
@@ -123,6 +125,7 @@
         <script  src="js/main.js"></script>
         <script  src="js/windchill.js"></script>
         <script  src="js/forecast.js"></script>
+        <script  src="js/events.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script>
             WebFont.load({
