@@ -1,0 +1,28 @@
+@media only screen and (min-width: 1130px){
+    header{
+        grid-template-columns: 13% 1fr;
+        grid-template-rows: 150px;
+    }
+    nav{
+        height: 35px;    
+    }
+    #motto{
+        font-size:180%;
+    }
+    #logo{
+        position: relative;
+    }
+    #mappic{
+        max-width:25%;
+    }
+    .towns{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        column-gap:10px;
+        grid-template-rows:1fr;
+    }
+    .town{
+        display:block;
+        padding-bottom:15px;
+    }
+}
