@@ -1,0 +1,276 @@
+body{
+    width:100%;
+    background-color:#FAFAFA;
+    font-family: "Times New Roman", Times, serif;
+    
+}
+main{
+    width: 80%;
+    padding: 0 0;
+    margin: 1em 10%;
+    box-shadow: 5px 5px 8px #1D242B;
+    padding-bottom: 5px;
+    position: relative;
+    top: -30px;
+}
+aside{
+    max-width:100%;
+    background-color:goldenrod;
+    color:black;
+    text-align:center;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    padding:10px;
+}
+header{
+    background-color: #1e56a0;
+    width:100%;
+    position:relative;
+    top:-30px;
+    left:-10px;
+    display:grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: auto;
+    margin-top:20px;
+}
+#logo{
+    height:auto;
+    width:80%;
+    grid-column:1/2;
+    grid-row:1/2;
+}
+h1{
+    font-family: 'Vollkorn SC', serif;
+    font-size: 200%;
+    color: #FAFAFA;
+    grid-column:2/3;
+    grid-row:1/2;
+    text-shadow: 5px 5px black;
+}
+h2{
+    font-family: 'Lora', serif;
+    font-size: 200%;
+    color:#FAFAFA;
+}
+#motto{
+    color:#FAFAFA;
+    font-size:100%;
+    grid-column:2/3;
+    grid-row: 1/2;
+    align-self: end;
+    margin-bottom:5px;
+}
+nav{
+    width: 100%;
+    position:relative;
+    left:-10px;
+    top:-30px;
+    background-color: #163172;
+    color:#FAFAFA;
+    padding: 0;
+}
+#activepage{
+    color:goldenrod;
+}
+ul{ 
+    padding-left:initial;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+}
+.navBar li:first-child {
+    display: block;
+}
+.navBar li{
+    display:none;
+}
+li{
+    font-family: 'Lora', serif;
+    padding: 0;
+    flex:1;
+    list-style-type: none;
+    height:100%;
+}
+
+.responsive li {
+	display: block;
+}
+
+h2#h2Banner {
+    position: relative;
+    left: -21px;
+    padding: 0.1em 21px;
+    top: 0.5em;
+    background-color:#1e56a0;
+}
+h2#h2Banner:before{
+    position: absolute;
+    left:0;
+    bottom:-15px;
+    border-top: 15px solid #444;
+    border-left: 20px solid transparent;
+    width: 0;
+    height: 0;
+    content: "";
+}
+.placeholder{
+    text-align:center;
+    padding:1%;
+    margin:1%;
+    background-color: #8a8a8a;
+    border: 2px dotted   #585858;
+    color:  white;
+    margin-bottom:10px;
+}
+footer{
+    background-color: #1e56a0;
+    color: #FAFAFA;
+    width: 100%;
+    position:relative;
+    bottom:0;
+    left:-10px;
+    padding:1%;
+    text-align:center;
+
+}
+a{
+    text-decoration:unset;
+    display:inline-block;
+    color: #FAFAFA;
+    width:100%;
+    height:100%;
+}
+a:visited{
+    color:#FAFAFA;
+}
+a:hover{
+    background-color:#3d5283;
+}
+.linkName{
+    margin:5px;
+    margin-top:0px;
+    color: white;
+}
+#phone:before{
+    content: '\260F ';
+}
+#phone{
+    margin-bottom:2px;
+}
+#email:before{
+    content: '\2709 ';
+}
+#email{
+    margin-top:2px;
+}
+#heroImg {
+    width:98%;
+    height:auto;
+    margin: 0 1%;
+    margin-top: 15px;
+}
+.article{
+    background-color: lightgrey;
+    padding: 10px;
+}
+#articleImg{
+    width:90%;
+    height:auto;
+    box-shadow:5px 5px 8px black;
+    margin: 0 5%;
+}
+.forecast, #mapImg{
+    display:none;
+}
+.medialinks{
+    display:inline;
+}
+.medialinks:hover{
+    background-color:white;
+}
+.mediaIcons, #locationImg{
+    width:15px;
+    height:auto;
+}
+	
+.heroDiv{
+    margin: 10px auto;
+    position: relative;
+}
+.herocast{
+    position: absolute;
+    bottom: 8px;
+    left: 20px;
+	background: #1e56a0;
+	border: 1px solid #000;
+	padding: 5px;
+	box-shadow: 0 0 30px #111;
+    opacity: .8;
+    
+}
+#sumContent{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20px 20px 20px 20px 20px;
+    column-gap: 5px;
+    color:white;
+    font-size:12px;
+    margin-top:3px;
+    padding-bottom:5px;
+}
+.leftSum{
+    grid-column: 1/2;
+    text-align:end;
+}
+.rightSum{
+    grid-column: 2/3;
+    text-align:start;
+    color:goldenrod;
+}
+#currently, #currently2{
+    grid-row: 1/2;
+}
+#high, #high2{
+    grid-row: 2/3;
+}
+#windChill, #windChill2{
+    grid-row: 3/4;
+}
+#humidity, #humidity2{
+    grid-row: 4/5;
+}
+#windSpeed, #windSpeed2{
+    grid-row: 5/6;
+}
+#articleContent{
+    margin:5px;
+}
+#weatherSum{
+    color:white;
+    border-bottom:2px solid white;
+    margin-top: 3px;
+    margin-bottom:3px;
+}
+hr{
+    border-color:#1e56a0;
+}
+h3{
+    font-family: 'Lora', serif;
+}
+#author{
+    color:#163172;
+    font-style:italic;
+}
+/*gallery css*/
+.gallerycontent{
+    box-shadow: 2px 2px 4px #888888;
+    width:300px;
+    margin:0 auto;
+}
+.gallerycontent p{
+    font-size: 18px;
+    margin-top:2px;
+    margin-left:2px;
+    font-style:italic;
+};

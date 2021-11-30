@@ -1,9 +1,10 @@
+<!doctype html>
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
-    <title>Fish Haven</title>
+    <title>Preston Idaho</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Fish Haven weather report">
+    <meta name="description" content="Preston Idaho Weather">
     <link rel="stylesheet" href="cs/main.css">
     <link rel="stylesheet" href="cs/medium.css">
     <link rel="stylesheet" href="cs/large.css">
@@ -24,20 +25,20 @@
             <ul class="navBar">
                 <li><a class="menu" href="#"><div class="linkName">&#9776; Menu</div></a></li>
                 <li><a href="index.html" id="home"><div class="linkName">Home</div></a></li>
-                <li><a href="preston.html" id="preston"><div class="linkName" class="active-page">Preston</div></a></li>
-                <li><a href="sodasprings.html" id="current"><div class="linkName">Soda Springs</div></a></li>
-                <li><a href="fishheaven.html" id="fishheaven"><div class="linkName">Fish Heaven</div></a></li>
+                <li><a href="preston.html" id="current"><div class="linkName" class="active-page">Preston</div></a></li>
+                <li><a href="sodasprings.html" id="sodasprings"><div class="linkName">Soda Springs</div></a></li>
+                <li><a href="fishheaven.html" id="fishhaven"><div class="linkName">Fish Haven</div></a></li>
                 <li><a href="stormcenter.html" id="stormcenter"><div class="linkName">Storm Center</div></a></li>
                 <li><a href="gallery.html" id="gallery"><div class="linkName">Gallery</div></a></li>
             </ul>
         </nav>
         <main>
-          <h2 id="h2Banner">Fish Haven</h2>
+          <h2 id="h2Banner">Preston Idaho</h2>
           <div class="heroDiv">
               <picture>
-                <source srcset="images/fheromed.jpg" media="(min-width:32.5em) and (max-width:45em )">
-                <source srcset="images/fherolarge.jpg" media="(min-width:45em)">
-                <img id="heroImg" src="images/fherosmall.jpg" alt="frank image">
+                <source srcset="images/heromed.jpg" media="(min-width:32.5em) and (max-width:45em )">
+                <source srcset="images/herolarge.jpg" media="(min-width:45em)">
+                <img id="heroImg" src="images/herosmall.jpg" alt="frank image">
               </picture>
             <section class="herocast">
               <h4 id="weatherSum">Weather Summary</h4>
@@ -78,26 +79,27 @@
                 </tr>
               </table>
           </div>
-          <div id="eventDiv">
-            <h2 id="eventHead">Events</h2>
-            <p id="events"></p>
-          </div>
+          
           <div class="article">
             <picture>
-                <source srcset="images/havenmedium.jpeg" media="(min-width:32.5em) and (max-width:40em )">
-                <source srcset="images/havenlarge.jpeg" media="(min-width:40em)">
-                <img id="articleImg" src="images/havensmall.jpeg" alt="articles">
+                <source srcset="images/foundersdaymedium.jpg" media="(min-width:32.5em) and (max-width:40em )">
+                <source srcset="images/foundersdaylarge.jpg" media="(min-width:40em)">
+                <img id="articleImg" src="images/foundersdaysmall.jpg" alt="weatherNews">
               </picture>
               
-              <h3>Fish Haven, Idaho</h3>
-              <h4 id="author">Wikipedia</h4>
+              <h3>Founder's Day Weekend!</h3>
+              <h4 id="author">by Done Day </h4>
               <p id="articleContent">
-                The first settlement at Fish Haven was made in 1864. 
-                A post office called Fish Haven was established in 1867,
-                and remained in operation until 1962.
-                The community was so named because nearby Bear Lake is a favorite fishing spot
-                Fish Haven's population was estimated at 100 in 1909,[4] and was 130 in 1960.
-              </p>
+                OK. So there are no concerts this weekend. Or movies to go to. Or restaurant dining rooms to visit. Every day seems a lot like the next.
+
+But, you can have a good weekend in Boise and still follow the Stay at Home Order (and common sense). Here are some ideas:
+
+Walk your neighborhood. Getting out close to home is allowed under Gov. Brad Little’s order – and pretty good for you. Temperatures will near 60 this weekend – and a little time outside in your neighborhood can feel good. Wave at the neighbors. Notice the trees and the birds and the sky. Remember that things will get better.
+Chat with your neighbors. Speaking of your neighborhood, now’s a good time to have an over-the-fence chat. Or, for you apartment dwellers, from one patio or balcony to the next. Keep that six-feet-or-more social distance – but even a little human contact outside of your home can be a good thing.
+Do Something Good. Send a few bucks to a worthy charity, if you are able. Donate to the Idaho Foodbank. Or one of several other actions – check out our Do Something Good guide.
+Call your mom or dad (or both). When was the last time you checked in on your parents? Give them a call – or Facetime.
+Order a drink to go. If you happen to drink, there are a whole bunch of places that will deliver to you – beer, wine, even cocktails. Many of these are listed in our takeout guide. Better yet, enjoy it on your front porch.
+…Or some food. There are more than 100 local restaurants hoping to bring you some food or let you swing by to pick it up. You can help a local business, in the process.
           </div>
           <hr>
           <div class="map">
@@ -125,10 +127,9 @@
             </div>
             <span id="date"></span>
         </footer>
-        <script  src="js/fmain.js"></script>
-        <script  src="js/fforecast.js"></script>
-        <script  src="js/fwindchill.js"></script>
-        <script  src="js/fevents.js"></script>
+        <script  src="js/main.js"></script>
+        <script  src="js/windchill.js"></script>
+        <script  src="js/forecast.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script>
             WebFont.load({

@@ -1,0 +1,38 @@
+@media only screen and (min-width: 1130px){
+    header{
+        grid-template-columns: 13% 1fr;
+        grid-template-rows: 150px;
+    }
+    nav{
+        height: 35px;    
+    }
+    #motto{
+        font-size:180%;
+    }
+    #logo{
+        position: relative;
+    }
+    #grid{
+        display:grid;
+        grid-template-columns: 33% 66%;
+    }
+    picture{
+        grid-column: 2/3;
+    }
+    #storm{
+        position: relative;
+        float: right;
+    }
+    #maincontainer{
+        grid-column:1/2;
+    }
+    form{
+        padding-right: 0%;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    #storm{
+        display:block;
+    }
+}
